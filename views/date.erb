@@ -1,4 +1,11 @@
-<h1>Today</h1>
-<%d = Date.today%>
-
-<p>The date is<%=d.strtime(%A), d.to_formatted_s(:long)%></p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date</title>
+    </head>
+    <body>
+        <%date = Date.today.strftime("%A, %B %d, %Y")%>
+    
+        <p>The date is <%=date%></p>
+    </body>
+</html>
